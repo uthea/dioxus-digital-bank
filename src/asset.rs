@@ -1,0 +1,21 @@
+use dioxus::prelude::*;
+
+pub static LOGO_LIGHT: Asset = asset!("/assets/images/logo-light.svg");
+pub static LOGO_DARK: Asset = asset!("/assets/images/logo-dark.svg");
+pub static HAMBURGER: Asset = asset!("/assets/images/icon-hamburger.svg");
+pub static BG_MOBILE: Asset = asset!("/assets/images/bg-intro-mobile.svg");
+pub static MOCKUPS: Asset = asset!("/assets/images/image-mockups.png");
+pub static CLOSE: Asset = asset!("/assets/images/icon-close.svg");
+pub static ONLINE: Asset = asset!("/assets/images/icon-online.svg");
+pub static BUDGETING: Asset = asset!("/assets/images/icon-budgeting.svg");
+pub static ONBOARDING: Asset = asset!("/assets/images/icon-onboarding.svg");
+pub static API: Asset = asset!("/assets/images/icon-api.svg");
+pub static CURRENCY: Asset = asset!("/assets/images/image-currency.jpg");
+pub static CONFETTI: Asset = asset!("/assets/images/image-confetti.jpg");
+pub static RESTAURANT: Asset = asset!("/assets/images/image-restaurant.jpg");
+pub static AIR_PLANE: Asset = asset!("/assets/images/image-plane.jpg");
+pub static FACEBOOK: Asset = asset!("/assets/images/icon-facebook.svg");
+pub static YOUTUBE: Asset = asset!("/assets/images/icon-youtube.svg");
+pub static TWITTER: Asset = asset!("/assets/images/icon-twitter.svg");
+pub static PINTEREST: Asset = asset!("/assets/images/icon-pinterest.svg");
+pub static INSTAGRAM: Asset = asset!("/assets/images/icon-instagram.svg");

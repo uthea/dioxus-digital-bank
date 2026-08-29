@@ -1,0 +1,44 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 24px;
+  align-items: center;
+}
+
+.hamburger {
+  max-height: 11px;
+}
+
+.menu-container {
+  position: relative;
+  margin-right: 24px; 
+  margin-left: 24px;
+}
+
+.menu {
+  border-radius: 4px;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+
+  top: 24px;
+  width: 100%;
+  z-index: 2;
+  gap: 16px;
+
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.overlay-container {
+  position: relative
+}
+
+.overlay {
+  position: absolute;
+  background: rgba(0,0,0,0.3);
+  width: 100vw;
+  height: 100vh;
+}
