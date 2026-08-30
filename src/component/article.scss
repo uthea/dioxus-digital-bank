@@ -1,0 +1,64 @@
+.article {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  background-color: white;
+
+  &-thumbnail {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+
+  &-content {
+    margin-left: 31.5px;
+    margin-right: 31.5px;
+    margin-bottom: 29px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    &-author {
+      font-size: 10px;
+      color: hsl(233, 8%, 62%);
+      margin: 0;
+    }
+
+    &-area {
+      display: flex; 
+      flex-direction: column; 
+      gap: 8px;
+    }
+
+    &-title {
+      font-size: 16px; 
+      font-weight: 300; 
+      margin: 0;
+    }
+
+    &-summary {
+      font-size: 14px;
+      color: hsl(233, 8%, 62%);
+      margin: 0;
+    }
+  }
+}
+
+.latest-article {
+  padding: 64px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  background-color: hsl(0, 0%, 98%);
+
+  &-title {
+    font-size: 40px; 
+    text-align: center; 
+    font-weight: 300;
+  }
+
+  &-container {
+    display: flex; 
+    flex-direction: column; 
+    gap: 16px;
+  }
+}

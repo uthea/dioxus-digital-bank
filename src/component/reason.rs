@@ -1,37 +1,25 @@
 use dioxus::prelude::*;
+use dioxus_style::with_css;
 
 use crate::{
     asset::{API, BUDGETING, ONBOARDING, ONLINE},
     component::feature::Feature,
 };
 
+#[with_css(style, "src/component/reason.scss")]
 #[component]
 pub fn Reason() -> Element {
     rsx! {
-        div {
-            display: "flex",
-            flex_direction: "column",
-            gap: "48px",
-            padding: "64px 24px",
-            background_color: "#f4f5f7",
-            div { display: "flex", flex_direction: "column", gap: "16px",
-                h1 {
-                    margin: "0",
-                    font_size: "40px",
-                    text_align: "center",
-                    font_weight: "300",
-                    "Why choose Digitalbank?"
-                }
+        div { class: style::container,
+            div { class: style::reason,
+                h1 { class: style::title, "Why choose Digitalbank?" }
 
-                span {
-                    font_size: "14px",
-                    text_align: "center",
-                    color: " hsl(233, 8%, 62%)",
+                span { class: style::description,
                     "We leverage Open Banking to turn your bank account into your financial hub. Control your finances like never before."
                 }
             }
 
-            div { display: "flex", flex_direction: "column", gap: "32px",
+            div { class: style::feature_container,
                 Feature {
                     icon: ONLINE,
                     title: "Online Banking",

@@ -1,0 +1,32 @@
+.container {
+  padding: 54.82px 75.5px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  background-color: hsl(233, 26%, 24%);
+  align-items: center;
+}
+
+.social-media {
+  display: flex; 
+  gap: 16px;
+}
+
+.navigation {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center,
+}
+
+.trademark-container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: center;
+}
+
+.trademark {
+  font-size: 14px;
+  color: hsl(233, 8%, 62%);
+}

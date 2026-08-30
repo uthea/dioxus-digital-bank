@@ -1,20 +1,15 @@
 use dioxus::prelude::*;
+use dioxus_style::with_css;
 
 use crate::asset::{AIR_PLANE, CONFETTI, CURRENCY, RESTAURANT};
 
+#[with_css(style, "src/component/article.scss")]
 #[component]
 pub fn LatestArticle() -> Element {
     rsx! {
-        div {
-            padding: "64px 24px",
-            display: "flex",
-            flex_direction: "column",
-            gap: "48px",
-            background_color: "hsl(0, 0%, 98%)",
-
-            h1 { font_size: "40px", text_align: "center", font_weight: "300", "Latest Article" }
-
-            div { display: "flex", flex_direction: "column", gap: "16px",
+        div { class: style::latest_article,
+            h1 { class: style::latest_article_title, "Latest Article" }
+            div { class: style::latest_article_container,
                 Article {
                     thumbnail: CURRENCY,
                     author: "Claire Robinson",
@@ -44,43 +39,18 @@ pub fn LatestArticle() -> Element {
     }
 }
 
+#[with_css(style, "src/component/article.scss")]
 #[component]
 fn Article(thumbnail: Asset, author: String, title: String, summary: String) -> Element {
     rsx! {
-        div {
-            display: "flex",
-            flex_direction: "column",
-            gap: "24px",
-            background_color: "white",
+        div { class: style::article,
+            img { class: style::article_thumbnail, src: thumbnail }
+            div { class: style::article_content,
+                span { class: style::article_content_author, "By {author}" }
 
-            img {
-                border_top_left_radius: "5px",
-                border_top_right_radius: "5px",
-                src: thumbnail,
-            }
-            div {
-                margin_left: "31.5px",
-                margin_right: "31.5px",
-                margin_bottom: "29px",
-                display: "flex",
-                flex_direction: "column",
-                gap: "16px",
-
-                span {
-                    font_size: "10px",
-                    color: " hsl(233, 8%, 62%)",
-                    margin: "0",
-                    "By {author}"
-                }
-
-                div { display: "flex", flex_direction: "column", gap: "8px",
-                    h1 { font_size: "16px", font_weight: "300", margin: "0", "{title}" }
-                    span {
-                        font_size: "14px",
-                        color: " hsl(233, 8%, 62%)",
-                        margin: "0",
-                        "{summary} ..."
-                    }
+                div { class: style::article_content_area,
+                    h1 { class: style::article_content_title, "{title}" }
+                    span { class: style::article_content_summary, "{summary} ..." }
                 }
 
             }
