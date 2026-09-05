@@ -1,0 +1,17 @@
+name: github pages
+permissions:
+  contents: write
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: "Dioxus Deploy"
+        uses: uthea/dioxus-deploy-action@1.2
+        with:
+          version: "7.1.0"
