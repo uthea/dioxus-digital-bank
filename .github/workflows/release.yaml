@@ -12,6 +12,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: "Dioxus Deploy"
-        uses: uthea/dioxus-deploy-action@1.3
+        uses: uthea/dioxus-deploy-action@1.4
         with:
           version: "0.7.10"
+          basePath: "dioxus-digital-bank"
