@@ -4,6 +4,7 @@ pub static LOGO_LIGHT: Asset = asset!("/assets/images/logo-light.svg");
 pub static LOGO_DARK: Asset = asset!("/assets/images/logo-dark.svg");
 pub static HAMBURGER: Asset = asset!("/assets/images/icon-hamburger.svg");
 pub static BG_MOBILE: Asset = asset!("/assets/images/bg-intro-mobile.svg");
+pub static BG_DESKTOP: Asset = asset!("/assets/images/bg-intro-desktop.svg");
 pub static MOCKUPS: Asset = asset!("/assets/images/image-mockups.png");
 pub static CLOSE: Asset = asset!("/assets/images/icon-close.svg");
 pub static ONLINE: Asset = asset!("/assets/images/icon-online.svg");

@@ -1,8 +1,14 @@
+@import "src/component/variable";
+
 .header {
   display: flex;
   justify-content: space-between;
-  padding: 24px;
+  padding: 21.54px 24px;
   align-items: center;
+
+  @media(min-width: $breakpoint-tablet) {
+    padding: 21.54px 80px;
+  }
 }
 
 .hamburger {
@@ -13,6 +19,11 @@
   position: relative;
   margin-right: 24px; 
   margin-left: 24px;
+
+  @media(min-width: $breakpoint-tablet) {
+    margin-right: 80.5px; 
+    margin-left: 80.5px;
+  }
 }
 
 .menu {

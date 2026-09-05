@@ -1,3 +1,5 @@
+@import "src/component/variable";
+
 .container {
   display: flex;
   flex-direction: column;
@@ -7,6 +9,12 @@
   margin-top: 48px;
   margin-bottom: 56px;
   align-items: center;
+
+  @media(min-width: $breakpoint-tablet) {
+    margin-left: 160.5px;
+    margin-right: 160.5px;
+  }
+
 }
 
 .title {
@@ -14,10 +22,19 @@
   text-align: center;
   font-weight: 300;
   margin: 0;
+
+
+  @media(min-width: $breakpoint-tablet) {
+    font-size: 56px;
+  }
 }
 
 .description {
   font-size: 14px;
   text-align: center;
   color: hsl(233, 8%, 62%);
+
+  @media(min-width: $breakpoint-tablet) {
+    font-size: 18px;
+  }
 }

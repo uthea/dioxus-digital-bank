@@ -1,11 +1,25 @@
+@import "src/component/variable";
+
 .intro {
-  background-size: cover;
-  background-position: center;
   overflow: hidden;
+  background-image: var(--mobile);
+  background-repeat: no-repeat;
+  padding-left: 25px;
+  padding-right: 25px;
+  background-position: 100% 57%;
+
+
+  @media(min-width: $breakpoint-tablet) {
+    background-image: var(--desktop);
+    background-size: 135%;
+    background-position: 27% 106%;
+    padding-left: 83px;
+    padding-right: 83px;
+  }
 }
 
 .image {
-  margin-top: -34%; 
-  max-width: 95%;
-  margin-left: 10px;
+  margin-top: -36%;
+  width: 100%;                  
+  max-width: 100%; 
 }
