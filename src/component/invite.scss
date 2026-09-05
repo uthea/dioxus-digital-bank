@@ -15,6 +15,15 @@
     margin-right: 160.5px;
   }
 
+  @media(min-width: $breakpoint-desktop) {
+    align-items: flex-start;
+    margin-top: 173px;
+    margin-bottom: 173px;
+    margin-left: 161px;
+    margin-right: 0px;
+    flex: 1;
+  }
+
 }
 
 .title {
@@ -27,6 +36,10 @@
   @media(min-width: $breakpoint-tablet) {
     font-size: 56px;
   }
+
+  @media(min-width: $breakpoint-desktop) {
+    text-align: left;
+  }
 }
 
 .description {
@@ -36,5 +49,9 @@
 
   @media(min-width: $breakpoint-tablet) {
     font-size: 18px;
+  }
+
+  @media(min-width: $breakpoint-desktop) {
+    text-align: left;
   }
 }

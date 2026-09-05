@@ -1,5 +1,16 @@
 @import "src/component/variable";
 
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+
+  @media(min-width: $breakpoint-desktop) {
+    flex-direction: row-reverse;
+  }
+}
+
 .intro {
   overflow: hidden;
   background-image: var(--mobile);
@@ -16,10 +27,29 @@
     padding-left: 83px;
     padding-right: 83px;
   }
+
+  @media(min-width: $breakpoint-desktop) {
+    flex: 1.5;
+    overflow-x: clip;
+    overflow-y: visible;
+
+    background-position: -10% 78%;
+    padding-left: 83px;
+    padding-right: 83px;
+    transform: scale(1.0);
+  }
 }
 
 .image {
   margin-top: -36%;
   width: 100%;                  
   max-width: 100%; 
+
+  @media(min-width: $breakpoint-desktop) {
+    position: absolute;
+    left: 20.5%;
+    top: 12%;
+    transform: scale(0.9);
+  }
 }
+

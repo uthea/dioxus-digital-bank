@@ -5,14 +5,30 @@
   justify-content: space-between;
   padding: 21.54px 24px;
   align-items: center;
+  z-index: 1;
+  background-color: white;
 
   @media(min-width: $breakpoint-tablet) {
     padding: 21.54px 80px;
   }
+
+  @media(min-width: $breakpoint-desktop) {
+    padding: 18px 165px;
+  }
 }
 
 .hamburger {
-  max-height: 11px;
+   @media(min-width: $breakpoint-desktop) {
+    display: none;
+  } 
+}
+
+.desktop-only {
+  display: none;
+
+   @media(min-width: $breakpoint-desktop) {
+    display: revert;
+  }
 }
 
 .menu-container {
@@ -23,6 +39,10 @@
   @media(min-width: $breakpoint-tablet) {
     margin-right: 80.5px; 
     margin-left: 80.5px;
+  }
+
+   @media(min-width: $breakpoint-desktop) {
+    position: static;
   }
 }
 
@@ -41,10 +61,34 @@
 
   padding-top: 30px;
   padding-bottom: 30px;
+
+  font-size: 18px;
+
+  @media(min-width: $breakpoint-desktop) {
+    border-radius: 0;
+    background: initial;
+    position: static;
+    width: auto;
+
+    flex-direction: row;
+    gap: 32px;
+    z-index: auto;
+    top: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+
+    font-size: 14px;
+    color: hsl(233, 8%, 62%);
+  }
 }
 
 .overlay-container {
-  position: relative
+  position: relative;
+
+  @media(min-width: $breakpoint-desktop) {
+    display: none;
+    position: static;
+  }
 }
 
 .overlay {

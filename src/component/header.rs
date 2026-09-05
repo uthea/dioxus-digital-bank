@@ -1,7 +1,10 @@
 use dioxus::prelude::*;
 use dioxus_style::with_css;
 
-use crate::asset::{CLOSE, HAMBURGER, LOGO_DARK};
+use crate::{
+    asset::{CLOSE, HAMBURGER, LOGO_DARK},
+    component::button::Button,
+};
 
 #[with_css(style, "src/component/header.scss")]
 #[component]
@@ -11,8 +14,13 @@ pub fn Header() -> Element {
         div { class: style::header,
             img { src: LOGO_DARK }
             img {
+                class: style::hamburger,
                 src: if open() { CLOSE } else { HAMBURGER },
                 onclick: move |_| open.toggle(),
+            }
+            div { class: style::desktop_only, Menu {} }
+            div { class: style::desktop_only,
+                Button { "Request Invite" }
             }
         }
 

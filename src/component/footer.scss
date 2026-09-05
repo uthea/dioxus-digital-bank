@@ -1,3 +1,5 @@
+@import "src/component/variable";
+
 .container {
   padding: 54.82px 75.5px;
   display: flex;
@@ -5,18 +7,37 @@
   gap: 32px;
   background-color: hsl(233, 26%, 24%);
   align-items: center;
+
+  @media(min-width: $breakpoint-desktop) {
+    padding: 47.32px 165px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr;
+  }
 }
 
 .social-media {
   display: flex; 
   gap: 16px;
+
+  @media(min-width: $breakpoint-desktop) {
+    order: 1;
+  }
 }
 
 .navigation {
   display: flex;
   flex-direction: column;
   gap: 16px;
-  align-items: center,
+  align-items: center;
+
+  @media(min-width: $breakpoint-desktop) {
+    grid-row: span 2;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 64px;
+    row-gap: 24px;
+  }
 }
 
 .trademark-container {
@@ -24,6 +45,11 @@
   flex-direction: column;
   gap: 24px;
   align-items: center;
+
+  @media(min-width: $breakpoint-desktop) {
+    grid-row: span 2;
+    justify-self: end;
+  }
 }
 
 .trademark {

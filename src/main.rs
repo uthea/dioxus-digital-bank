@@ -1,6 +1,6 @@
 use digital_bank::component::{
     article::LatestArticle, background_intro::BackgroundIntro, footer::Footer, header::Header,
-    invite::InviteSection, reason::Reason,
+    reason::Reason,
 };
 use dioxus::prelude::*;
 use dioxus_style::with_css;
@@ -19,7 +19,6 @@ fn App() -> Element {
         div { class: style::main,
             Header {}
             BackgroundIntro {}
-            InviteSection {}
             Reason {}
             LatestArticle {}
             Footer {}

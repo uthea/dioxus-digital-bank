@@ -24,6 +24,7 @@ pub fn Footer() -> Element {
             nav { class: style::navigation,
                 span { font_size: "14px", color: "white", "About Us" }
                 span { font_size: "14px", color: "white", "Contact" }
+                span { font_size: "14px", color: "white", "Blog" }
                 span { font_size: "14px", color: "white", "Careers" }
                 span { font_size: "14px", color: "white", "Support" }
                 span { font_size: "14px", color: "white", "Privacy Policy" }
