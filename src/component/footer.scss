@@ -21,6 +21,10 @@
 
   @media(min-width: $breakpoint-desktop) {
     order: 1;
+
+    & > * {
+      cursor: pointer;
+    }
   }
 }
 
@@ -37,6 +41,19 @@
     grid-template-columns: repeat(2, 1fr);
     column-gap: 64px;
     row-gap: 24px;
+  }
+
+  &-item {
+    font-size: 14px; 
+    color: white;
+
+    @media(min-width: $breakpoint-desktop) {
+      cursor: pointer;
+
+      &:active {
+        color: #30c88f
+      }
+    }
   }
 }
 

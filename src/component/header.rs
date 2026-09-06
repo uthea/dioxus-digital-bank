@@ -36,11 +36,26 @@ fn Menu() -> Element {
     rsx! {
         div { class: style::menu_container,
             nav { class: style::menu,
-                span { "Home" }
-                span { "About" }
-                span { "Contact" }
-                span { "Blog" }
-                span { "Careers" }
+                div { class: style::menu_wrapper,
+                    span { class: style::menu_item, "Home" }
+                    div { class: style::menu_line }
+                }
+                div { class: style::menu_wrapper,
+                    span { class: style::menu_item, "About" }
+                    div { class: style::menu_line }
+                }
+                div { class: style::menu_wrapper,
+                    span { class: style::menu_item, "Contact" }
+                    div { class: style::menu_line }
+                }
+                div { class: style::menu_wrapper,
+                    span { class: style::menu_item, "Blog" }
+                    div { class: style::menu_line }
+                }
+                div { class: style::menu_wrapper,
+                    span { class: style::menu_item, "Careers" }
+                    div { class: style::menu_line }
+                }
             }
         }
 

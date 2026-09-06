@@ -22,12 +22,12 @@ pub fn Footer() -> Element {
             }
 
             nav { class: style::navigation,
-                span { font_size: "14px", color: "white", "About Us" }
-                span { font_size: "14px", color: "white", "Contact" }
-                span { font_size: "14px", color: "white", "Blog" }
-                span { font_size: "14px", color: "white", "Careers" }
-                span { font_size: "14px", color: "white", "Support" }
-                span { font_size: "14px", color: "white", "Privacy Policy" }
+                span { class: style::navigation_item, "About Us" }
+                span { class: style::navigation_item, "Contact" }
+                span { class: style::navigation_item, "Blog" }
+                span { class: style::navigation_item, "Careers" }
+                span { class: style::navigation_item, "Support" }
+                span { class: style::navigation_item, "Privacy Policy" }
             }
 
             div { class: style::trademark_container,
